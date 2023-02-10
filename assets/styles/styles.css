@@ -3,10 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body
+{
     background-color:honeydew;
+    font-family: cursive;
 }
 
-header{
+header
+{
+    height: 40vh;
     background-image: url(../img/design2.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    ba
 }
+
+h1
+{
+    background-color:aliceblue;
+    padding-left: 2vw;
+    vertical-align: center;
+    font-size: 5rem;
+}
+
+nav
+{
+    text-align: end;
+    background-color:aliceblue;
+    height: 2vh;
+    padding-top: 0rem;
+}
+
+nav a
+{
+    display: inline-block;
+    width: 8rem;
+    height: 3rem;
+    color:aliceblue ;
+    border-width: 2px;
+    border-color: rgb(255, 249, 249);
+    background-color:blue;
+    text-decoration:none;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+nav a[href="#"]
+{
+    background-color:green;
+}
+
+nav a:hover
+{
+background-color:cadetblue;
+}
+
