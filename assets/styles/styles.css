@@ -80,7 +80,7 @@ main{
     padding: 50px;
     width: 300px;
 }
-section {
+div {
     position:absolute;
     padding: 20px 40px;
     left: 300px;
@@ -98,17 +98,17 @@ article p{
     text-indent: 2em;
     }
 
-.section_home{
+.div_home{
     background-image: url(../img/hockey1.jpg);
     background-repeat: no-repeat;
 }
 
-.section_about{
+.div_about{
     background-image: url(../img/hockey2.jpg);
     background-repeat: no-repeat;
 }
 
-.section_contact{
+.div_contact{
     background-image: url(../img/hockey3.jpg);
     background-repeat: no-repeat;
 }
