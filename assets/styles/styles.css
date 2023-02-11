@@ -81,11 +81,9 @@ main{
 section {
     position:absolute;
     padding: 20px;
-
     left: 300px;
     top:6rem;
     font-size: 1.25rem;
-   
     width:80vh;
     height:80vh;
     background-size:cover;
@@ -97,8 +95,6 @@ article p{
     padding-bottom: 20px;
     text-indent: 2em;
     }
-    
-
 
 .section_home{
     background-image: url(../img/hockey1.jpg);
@@ -110,5 +106,9 @@ article p{
     background-repeat: no-repeat;
 }
 
-
+.section_contact{
+    text-align: center;
+    background-image: url(../img/hockey3.jpg);
+    background-repeat: no-repeat;
+}
 
