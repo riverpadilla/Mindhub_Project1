@@ -134,14 +134,93 @@ section p{
     text-shadow: 0.05em 0.05em whitesmoke;
 }
 
-ol.list1{
-    list-style-position:inside;
+.list1{
+
+    list-style:decimal inside ;
 }
 
-ol.list2{
+.list1 ::marker{
+    font-weight: 800;
+}
+
+.list1 span{
+    font-weight: 800;
+}
+.list1 li{
+    margin-top: 1rem;
+}
+
+.list2 li{
+    margin-top:0;
+    margin-bottom: 0rem;
     list-style:lower-alpha inside;
 }
 
 ol.list3{
     list-style:circle inside;
+}
+
+dt{
+    font-weight: 800;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+dd{
+    margin-bottom: 2rem;
+}
+
+
+dd p{
+    text-indent: 2em;
+}
+
+table{
+    padding: 3rem;
+    min-width: 60vw ;
+    font-size: 1.5rem;
+    width: 80%;
+    border-spacing: 0 
+}
+
+thead{
+    text-align: justify;
+    background-color:chartreuse;
+}
+
+
+table .bgnd1{
+    background-color: rgb(25, 212, 212);
+}
+
+table .bgnd2{
+    background-color:azure;
+}
+
+.date_col{
+    text-align: center;
+}
+
+.gamescontact{
+    padding-left: 0;
+}
+.gamescontact div{
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.gamescontact span{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+#questions div{
+    padding: 0;
+}
+#contact{
+    display: flex;
+    margin-top: 10px;
+    max-width:80%;
+    justify-content: space-between;
+    
 }
