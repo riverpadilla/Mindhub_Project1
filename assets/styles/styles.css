@@ -141,3 +141,7 @@ ol.list1{
 ol.list2{
     list-style:lower-alpha inside;
 }
+
+ol.list3{
+    list-style:circle inside;
+}
