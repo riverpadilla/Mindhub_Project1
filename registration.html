@@ -33,9 +33,10 @@
 
             <form action="./show_data.html" method="get">
                 <fieldset>
-                    <div>
+                    <legend>Player's Information</legend>
+                    <div class="flex-row">
                         <label>
-                            Player's First Name:
+                            First Name:
                             <input name="firstname" maxlength="80" type="text">
                         </label>
                         
@@ -45,14 +46,14 @@
                         </label>
                     </div>
                     
-                    <div>
+                    <div class="flex-row full">
                         <label>
                             Street Address:
                             <input name="address" maxlength="120" type="text">
                         </label>
                     </div>
 
-                    <div>
+                    <div class="flex-row">
                         <label>
                             City:
                             <input name="city" maxlength="80" type="text">
@@ -60,14 +61,14 @@
                         
                         <label>
                             Zip Code:
-                            <input name="zipcode"  type="number" pattern="{000000}">
+                            <input name="zipcode"  type="number">
                         </label>
                     </div>
 
-                    <div>
+                    <div class="flex-row">
                         <label>
                             Birth Date (mm/dd/yyyy):
-                            <input name="birthdate" type="text" maxlength="10" pattern="{mm}{dd}{yyyy}">
+                            <input class="text-date" name="birthdate" type="text" maxlength="10" pattern="{mm}{dd}{yyyy}">
                         </label>
                         <Label>
                             Gender:
@@ -84,27 +85,27 @@
                             Grade:
                         </label>
                         <label>
-                            <input name="grade" type="checkbox" value="0">
+                            <input name="grade" type="radio" value="0">
                             Pre School
                         </label>
                         <label>
-                            <input name="grade" type="checkbox" value="1">
+                            <input name="grade" type="radio" value="1">
                             1st
                         </label>
                         <label>
-                            <input name="grade" type="checkbox" value="2">
+                            <input name="grade" type="radio" value="2">
                             2nd
                         </label>
                         <label>
-                            <input name="grade" type="checkbox"value="3">
+                            <input name="grade" type="radio" value="3">
                             3rd
                         </label>
                         <label>
-                            <input name="grade" type="checkbox" value="4">
+                            <input name="grade" type="radio" value="4">
                             4th
                         </label>
                         <label>
-                            <input name="grade" type="checkbox" value="5">
+                            <input name="grade" type="radio" value="5">
                             5th
                         </label>
                     </div>
@@ -112,12 +113,13 @@
                 </fieldset>
 
                 <fieldset>
-                    <div>
+                    <legend>Additional Information</legend>
+                    <div class="flex-col">
                         <h3>Which elementary school do you live near? </h3>
                         <label >
                             Closest School:
                             <select name="school">
-                                <option selected disabled>Select teh Closest School</option>
+                                <option selected disabled>Select the Closest School</option>
                                 <option value="AK">AJ Katzenmaier</option>
                                 <option value="GB">Greenbay</option>
                                 <option value="HY">Howard A Yeager</option>
@@ -128,62 +130,89 @@
                         </label>
                     </div>
                     
-                    <div>
-
+                    <div class="flex-col">
                         <h3>What position(s) do you normally play? (check all that apply)</h3>
-                        <label>
-                            <input name="pos1" type="checkbox" value="FOR">
-                            Forward
-                        </label>
-                        <label>
-                            <input name="pos2" type="checkbox" value="DEF">
-                            Defense
-                        </label>
-                        <label>
-                            <input name="pos3" type="checkbox" value="MID">
-                            Midfield
-                        </label>
-                        <label>
-                            <input name="pos4" type="checkbox"value="GKP">
-                            Goalkeeper
-                        </label>
+                        <span>
+                            <label>
+                                <input name="pos1" type="checkbox" value="FOR">
+                                Forward
+                            </label>
+                            <label>
+                                <input name="pos2" type="checkbox" value="MID">
+                                Midfield
+                            </label>
+                        </span>
+
+                        <span>
+                            <label>
+                                <input name="pos3" type="checkbox" value="DEF">
+                                Defense
+                            </label>
+                            <label>
+                                <input name="pos4" type="checkbox" value="GKP">
+                                Goalkeeper
+                            </label>
+                        </span>
                     </div>
 
-                    <div>
+                    <div class="flex-col">
                         <h3>Uniform Size:</h3>
-                        <label>
-                            <input name="uniform" type="radio" value="YS">
-                            Youth Small 
-                        </label>
-                        <label>
-                            <input name="uniform" type="radio" value="YM">
-                            Youth Medium 
-                        </label>
-                        <label>
-                            <input name="uniform" type="radio" value="YL">
-                            Youth Large 
-                        </label>
-                        <label>
-                            <input name="uniform" type="radio"value="SM">
-                            Small 
-                        </label>
-                        <label>
-                            <input name="uniform" type="radio" value="MD">
-                            Medium 
-                        </label>
-                        <label>
-                            <input name="uniform" type="radio" value="LG">
-                            Large 
-                        </label>
-                        <label>
-                            <input name="uniform" type="radio" value="EL">
-                            Extra-Large 
-                        </label>
+                        <div>
+
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input name="uniform" type="radio" value="YS">
+                                        Youth Small 
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input name="uniform" type="radio" value="YM">
+                                        Youth Medium 
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input name="uniform" type="radio" value="YL">
+                                        Youth Large 
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input name="uniform" type="radio" value="SM">
+                                        Small 
+                                    </label>
+                                </li>
+                            </ul>
+                            
+                            <ul>
+                                <li>
+                                    
+                                    <label>
+                                        <input name="uniform" type="radio" value="MD">
+                                        Medium 
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input name="uniform" type="radio" value="LG">
+                                        Large 
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input name="uniform" type="radio" value="EL">
+                                        Extra-Large 
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                 </fieldset>
                 <fieldset>
-                    <div>
+                    <div class="flex-col">
 
                         <h3>Permission to Play</h3>
                         <p>
@@ -200,22 +229,21 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="flex-row full">
                         <label>
                             Parent/ guardian:
-                            <input name="signature" maxlength="80" type="text">
-                            
+                            <input name="parent" maxlength="80" type="text">
                         </label>
                     </div>
                     <div>
                         <label>
-                            Date:
-                            <input name="sign_date"  type="text" maxlength="10">
+                            Date (mm/dd/yyyy):
+                            <input class="text-date" name="sign_date"  type="text" maxlength="10">
                         </label>
                     </div>
 
                 </fieldset>
-                <input type="submit" value="Submit">
+                <input type="submit" value="SUBMIT">
             </form>
         </div>
     </main>
