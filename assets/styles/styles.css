@@ -8,25 +8,29 @@ body
 {
     background-color:rgb(148, 207, 188);
     font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header
 {
+    width: 100%;
     position: relative;
     height: 30vh;
-    min-height: 500px;
     background-image: url(../img/design2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 h1
 {
+    width: 100%;
     background-color:rgb(45, 160, 168);
     padding-left: 2vw;
-    vertical-align: center;
-    font-size: 3vw;
+    font-size: 3rem;
+    text-shadow: 0.1em 0.1em yellowgreen;
 }
 
 nav
@@ -41,7 +45,7 @@ nav
 nav a
 {
     display: inline-block;
-    width: 12vw;
+    width: 8%;
     height: 3.4vh;
     color:aliceblue;
     border-width: 2px;
@@ -81,28 +85,30 @@ h2
 
 main{
     display: flex;
+    width: 100%;
     position: relative;
-    min-height:70vh;
-
+    min-height: 70vh;
 }
  
 .logo{
     display: flex;
     width: 30vw;
+    height: 30vw;
     padding: 5vw;
 }
 
 .logo img{
-    width: 20vw;
-    height: 20vw;
+    width: 100%;
+    height: 100%;
     box-shadow: 0.2em 0.2em 0.2em 0.2em rgb(45, 160, 168);
 }
 
-div {
+div{
     padding: 20px 40px;
-    top:0rem;
+}
+.div1, .div2, .div3 {
     font-size: 1.25rem;
-    width: 100%;
+    width: 70%;
     background-size:cover;
     color: black;
     text-shadow: 0.05em 0.05em limegreen;
@@ -115,7 +121,7 @@ section p{
 
 .div1{
     background-image: url(../img/hockey1.jpg);
-    background-repeat:repeat;
+    background-repeat:no-repeat;
 }
 
 .div2{
@@ -177,9 +183,8 @@ dd p{
 
 table{
     padding: 3rem;
-    min-width: 60vw ;
+    width: 100%;
     font-size: 1.5rem;
-    width: 80%;
     border-spacing: 0 
 }
 
@@ -207,20 +212,174 @@ table .bgnd2{
 .gamescontact div{
     padding-left: 0;
     padding-right: 10px;
+    width:100%;  
+
 }
 
 .gamescontact span{
+    width:100%;
     font-weight: 800;
     font-size: 1.5rem;
 }
 
 #questions div{
     padding: 0;
+    width:100%;
 }
 #contact{
     display: flex;
     margin-top: 10px;
-    max-width:80%;
+    width:100%;
     justify-content: space-between;
+}
+
+legend{
+    background-color: gray;
+    width: 30%;
+}
+
+fieldset div{
+    display: flex;
+    width:100%;
+    max-width: 70vw;
+}
+
+.flex-row label{
+    width:50%
+}
+
+.full label{
+    width:100%;
+}
+
+label.birthday{
+    width:50%;
+}
+
+input[type="text"]{
+    width:70%;
+    height: 30px;
+}
+
+input[type="number"]{
+    width:50%;
+    height: 30px;
+}
+
+input.text-date{
+    width: 20%;
+}
+
+select{
+    width:50%;
+    height: 30px;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
     
+
+.flex-col span{
+    display: flex;
+    width: 50%;
+}
+
+.flex-col span label{
+    width: 50%;
+}
+
+ul {
+    list-style:none;
+    width: 50%;
+}
+
+input[type="submit"]{
+    width:100%;
+    height: 50px;
+    font-family: cursive;
+    font-weight: 800;
+}
+
+iframe{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 48%;
+    height: 20vh;
+}
+
+@media (max-width: 1024px) {
+    
+    h1{
+        font-size: 2rem;
+    }
+
+    nav a
+    {
+        width: 8%;
+        height: 3vh;
+        font-size:1vh;
+    }  
+    
+    legend{
+        width: 40%;
+    }
+    form{
+        font-size: 1rem;
+    }
+    
+    table{
+        font-size: 1.2rem;
+    }
+
+    .gamescontact{
+        font-size: 1rem;
+    }
+
+    .gamescontact span{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    nav a
+    {
+        width: 8%;
+        height: 2vh;
+        font-size:0.7vh;
+    }  
+    
+    legend{
+        width: 40%;
+    }
+    form{
+        font-size: 0.8rem;
+    }
+    
+    table{
+        font-size: 0.9rem;
+    }
+
+    .gamescontact{
+        font-size: 0.8rem;
+    }
+
+    .gamescontact span{
+        font-size: 1rem;
+    }
+
+    iframe{
+        height: 15vh;
+    }
+    
+    .flex-col span{
+        width: 70%;
+    }
+        
 }
